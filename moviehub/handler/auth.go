@@ -22,8 +22,6 @@ type loginReq struct {
     Password string `json:"password"`
 }
 
-
-
 func (h *Handler) Register(w http.ResponseWriter, r *http.Request) {
     var req registerReq
     if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
