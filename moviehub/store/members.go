@@ -91,4 +91,4 @@ func (s *Store) UpdateMemberRole(ctx context.Context, id int64, role string) (Me
     }
     return m, err
 }
-คัดลอก
+
